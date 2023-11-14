@@ -15,9 +15,9 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker run -i $(docker build -q 16) /bin/sh -c "node --version && go version && git --version && bash --version"
-          docker run -i $(docker build -q 18) /bin/sh -c "node --version && go version && git --version && bash --version"
-          docker run -i $(docker build -q 20) /bin/sh -c "node --version && go version && git --version && bash --version"
+          docker run -i $(docker build -q 1.19) /bin/sh -c "node --version && go version && git --version && bash --version"
+          docker run -i $(docker build -q 1.20) /bin/sh -c "node --version && go version && git --version && bash --version"
+          docker run -i $(docker build -q 1.21) /bin/sh -c "node --version && go version && git --version && bash --version"
 
   auto-merge:
     runs-on: ubuntu-latest
